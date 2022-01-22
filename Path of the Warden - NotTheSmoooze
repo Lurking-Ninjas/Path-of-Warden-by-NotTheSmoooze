@@ -1,0 +1,50 @@
+*/
+var iFileName = "Path of the Warden - NotTheSmoooze.js"; // 
+RequiredSheetVersion(12.999); 
+
+AddSubClass(
+
+	"barbarian",
+
+	"warden",
+
+	{ 
+
+		regExpSearch : /^(?=.*warden).*$/i,
+
+		subname : "Path of the Warden",
+
+		source : ["HB", 0], // https://drive.google.com/file/d/1luKf8XuoZz_YzMsWK3rZsq6E6cQvFyAn/view?usp=sharing
+
+		fullname : "warden",
+
+		features : {
+
+			"subclassfeature3" : {
+				name : "Warden's Rage",
+				source : ["HB", 0],
+				minlevel : 3,
+				description : "\n   " + "While raging and wielding a shield when a friendly creature I can see within 30 feet is attacked I can use my reaction", + "\n   " + "to move half my speed without provoking opportunity attacks if I end the move within 5 feet of the attacker I become the target of that attack",
+				eval : AddAction(\"bonus action\", \"Warden's Rage\", \"Path of the Warden\")",
+			},
+			"subclassfeature6" : {
+				name : "Unflinching Defence",
+				source : ["HB", 0],
+				minlevel : 6,
+				description : "\n   " + "I can't be knocked prone or moved against my will while raging and wielding a shield" + "\n   " + "When I use Warden's Rage to become a target of an attack I gain resistance to that damage even if it isn't bludgeoning, piercing, or slashing",
+			},
+			"subclassfeature10" : {
+				name : "Shield Charge",
+				source : ["HB", 0],
+				minlevel : 10,
+				description : "\n   " + "When I move at least 10 feet toward a creature and hit it with an attack on that same turn it must succeed a (DC 10 + my Str Mod + my Prof Mod)" + "\n   " + "Or be pushed 10 feet directly away from me if the creature strikes a surface it takes 2d6 bludgeoning damage",
+			},
+			"subclassfeature14" : {
+				name : "Warden's Fury",
+				source : ["HB", 0],
+				minlevel : 14,
+				description : "\n   " + "Whenever I use Warden's Rage to become the target of an attack I can make a melee weapon attack as part of the same reaction",
+			},
+		}
+	}
+);
