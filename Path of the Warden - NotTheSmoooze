@@ -25,7 +25,7 @@ AddSubClass(
 				source : ["HB", 0],
 				minlevel : 3,
 				description : "\n   " + "While raging and wielding a shield when a friendly creature I can see within 30 feet is attacked I can use my reaction", + "\n   " + "to move half my speed without provoking opportunity attacks if I end the move within 5 feet of the attacker I become the target of that attack",
-			        action : ["reaction", " (Warden's Rage)"],
+			        action : ["reaction", "(Warden's Rage)"],
 			},
 			"subclassfeature6" : {
 				name : "Unflinching Defence",
